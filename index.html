@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 	<link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+ -->	<link rel="Shortcut Icon" href="img/favicon.ico">
+	<meta charset="utf-8">
+
+	<!--viewport goodness http://enva.to/A79s3G-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Brianyees</title>
+<!-- 	<link href="img/favicon.ico" rel="shortcut icon"  type="image/icon">
+ -->		<!-- 	<link rel="stylesheet" href="css/animations.css">	
+ -->	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/fluid_skeleton.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles2.css">
+	<link rel="stylesheet" href="css/photogenerator.css">
+	
+	<script type="text/javascript" src="js/skrollr.js"></script>
+	<script type="text/javascript">
+	skrollr.init({
+	});
+	</script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="js/hoverOver.js" type="text/javascript" language="javascript"></script>
+	<script type="text/javascript" src="js/jquery.montage.min.js"></script>
+	<script type="text/javascript">
+	$(function() {
+
+		var $container 	= $('#am-container'),
+		$imgs		= $container.find('img').hide(),
+		totalImgs	= $imgs.length,
+		cnt			= 0;
+
+		$imgs.each(function(i) {
+			var $img	= $(this);
+			$('<img/>').load(function() {
+				++cnt;
+				if( cnt === totalImgs ) {
+					$imgs.show();
+					$container.montage({
+						liquid: false,
+						minw : 100,
+						minsize	: false,
+							maxw: 300,
+							margin : 1,
+							fillLastRow : true
+						});
+						}
+					}).attr('src',$img.attr('src'));
+		});	
+	});
+	</script>
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- Favicons -->
+
+
+	</head>
+	<body>
+			<a id="one"></a>
+
+			<!-- smoothScroller -->
+			<div class="circle-container">
+				<a href="#one"><div class="circle"></div></a>
+				<a href="#two"><div class="circle"></div></a>
+				<a href="#three"><div class="circle"></div></a>
+				<a href="#four"><div class="circle"></div></a>
+				<a href="#five"><div class="circle"></div></a>
+			</div>
+
+
+			<!-- logo -->
+			<div class="logo" data-0="-webkit-transform: rotate(0deg); -webkit-trasnform-origin: center;" data-10000="-webkit-transform: rotate(10000deg); -webkit-trasnform-origin: center;">
+			<img src="img/icons/circlelogo1.png" width=180 />
+			</div>
+
+		<!-- moon background -->
+		<div class="top-moon" data-0="background-size:48%; left: 79%; -webkit-transform: rotate(0deg); width: 40%;" data-300="background-size:1%; left: -50%; -webkit-transform: rotate(180deg); width: 0%;">
+		</div>
+
+		<!-- SKY background -->
+		<header class="band" data-0="background-position:0px 0px;" data-2000="background-position:0px 1200px;" style="height: 55em;">
+
+			<div class="container">
+
+				<div class="columns sixteen" data-0="opacity: 1" data-200="opacity: 0">
+
+					<h1>Hi! I'm Brian!</h1>
+
+						<div class="pulse" style="margin-top: 16em;"><img src="img/icons/down-arrow.png">
+						</div>
+
+					</div>
+
+				</div>
+
+		</header><!--/ header-->
+
+<div class="banner" id="two">
+		<h1>I was born in San Francisco</h1>
+		<div class="headliner">Where I've learned pigeons flock, food is fusioned, hipsters rave, and where everyone can be themseleves.</div>
+</div>
+
+<!-- BRIDGE background image -->
+<section class="band" data-330="background-position: -100px 90px;" data-3000="background-position: -300px 90px;">
+	
+	<div class="container">
+
+		<div class="columns twelve offset-by-two" data-0="opacity: 1" data-180="opacity: 0">
+
+		</div><!--/ columns-->	
+		
+	</div><!--/ container-->		
+	
+</section><!--/ section-->
+
+<div class="banner" id="three">
+		<h1>I love making wicked awesome web applications!</h1>
+		<div class="headliner">I'm technically proficient, have real working experience, am easy to pair-program with, and won't stop until it's perfect!</div>
+</div>
+
+
+<div class="band main" style="background-image: url(img/backgrounds/desk2.jpg); background-size: 157%; background-position: center;">
+
+	<!-- coffee and mouse -->
+
+	<div class="coffee" data-2166="right: 0%;" data-2666="right: -25%;">
+		<img src="img/backgrounds/coffee-mouse-right.png" style="float: right;"/>
+	</div>
+	
+	<div class="container" style="margin-top: 8em; padding: 4em 0em;">
+				<!-- projects -->
+
+					<div class="projects">
+					<a href="http://moviesandcucumbers.com">
+					<h3><img src="img/icons/mnclogo.png" style="width: 100%;"/></h3>
+					<img id="preview" src="img/backgrounds/moviesncucumbers.png" style="width: 100%; height: 100%;"></a>
+					</div>
+
+					<br>
+
+					<div class="projects">
+						<a href="http://desolate-citadel-1012.herokuapp.com">
+						<h3><img src="img/icons/comingsoonlogo.png" style="width: 100%;"/></h3>
+						<img id="preview" src="img/backgrounds/comingsoon.png"  style="width: 100%;"></a>
+						</div>
+
+					<br>
+
+					<div class="projects">
+						<h1 style="color: black;">Survey Guerilla</h1>
+						<a href="http://whispering-hamlet-2484.herokuapp.com/">
+						<img id="preview" src="img/backgrounds/survey-guerilla.png" style="width: 100%;"></a>
+					</div>		
+
+			</div><!--/ column16-->
+
+	</div><!--/ bandmain-->
+	
+
+<div class="banner" id="four">
+	<h1>I love images, pictures, and videos.</h1>
+		<div class="headliner">For fun, safe keeping, daydreaming, goals, inspiration, and motivation.
+			<p>Here's some of my collection.</p>
+		</div>
+</div>
+
+			<!-- Put your other parallax photo here -->
+
+			<div class="tumblr-photos">  
+				<!-- photo strip -->
+				<div class="am-container" id="am-container" style="width:100%;margin:0 auto;">
+					<a href="javascript:;"><img id="computer" src="img/tumblr-imgs/2.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/64.png"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/6.gif"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/8.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/11.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/warriors.jpg"></img></a>
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/43.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/13.gif"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/14.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/82.jpg"></img></a>
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/15.gif"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/16.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/83.jpg"></img></a>
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/23.gif"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/18.jpg"></img></a>
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/36.jpg"></img></a>
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/4.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/17.jpg"></img></a>
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/74.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/75.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/76.gif"></img></a>
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/3.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/12.jpg"></img></a>
+
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/78.gif"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/79.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/80.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/81.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/86.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/92.png"></img></a>
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/25.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/72.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/27.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/28.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/29.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/30.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/41.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/34.gif"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/35.gif"></img></a>
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/19.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/38.jpg"></img></a>
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/33.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/37.jpg"></img></a>
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/1.gif"></img></a>
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/42.jpg"></img></a>
+		
+
+<!-- 					<a href="javascript:;"><img src="img/tumblr-imgs/77.gif"></img></a>
+ -->					<a href="javascript:;"><img src="img/tumblr-imgs/92.gif"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/47.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/48.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/92.jpg"></img></a>
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/93.jpg"></img></a>
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/90.png"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/91.png"></img></a>
+				
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/51.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/52.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/dog.jpg"></img></a>
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/90.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/44.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/88.jpg"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/46.jpg"></img></a>	
+					<a href="javascript:;"><img src="img/tumblr-imgs/65.gif"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/21.gif"></img></a>
+				</div>
+			</div>
+			<hr>
+<div class="fam"></div>
+
+<div class="banner" id="five">
+
+	<div class="container">
+
+	<div class="columns eight">
+		
+		<h3>About Me</h3>
+		
+	</div><!--/ column1-->
+
+	<div class="columns eight">
+		
+		<h3>Stalk or contact Brian</h3>
+		
+	</div><!--/ column2-->
+
+	</div>
+
+</div>
+
+<div class="band main" style="margin-top: 8em;">
+	
+	<div class="container">
+
+		<div class="columns eight">
+			
+			<p>I have always had a great passion for people. I would like to be a part of a institution that can change peoples lives everyday by providing them what they need when they need it.</p>
+
+			<p>I just completed <a href="http://devbootcamp.com">DevBootcamp.com</a> and am looking to apply my skills where I can continue to grow as a software engineer.</p>
+			
+		</div><!--/ column-->
+		
+		<div class="columns eight" id="contact">
+			
+			<a href="http://github.com/byee322">
+			<div class="row">
+			<img src="img/icons/github.png" align="middle" height="34" style="margin-bottom: 10px;"> github.com/byee322
+			</div></a>
+
+			<a href="http://linkedin.com/in/yeebrian">
+			<div class="row">
+			<img src="img/icons/linkedin.png" align="middle" height="34" style="margin-bottom: 10px;"> linkedin.com/in/yeebrian
+			</div></a>
+
+			<a href="http://twitter.com/brians__">
+			<div class="row">
+			<span><img src="img/icons/twitter.png" align="middle" height="34" style="margin-bottom: 10px;"> @BRIANs__</span>
+			</div>
+
+			<a href="http://http://instagram.com/brians___">
+			<div class="row">
+			<img src="img/icons/instagram.png" align="middle" height="34" style="margin-bottom: 10px;"> instagram.com/BRIANs___</a>
+			</div></a>
+
+			<a href="http://bydevbootcamp.tumblr.com">
+			<div class="row">
+			<img src="img/icons/tumblr.png" align="middle" height="34" style="margin-bottom: 10px;"> bydevbootcamp.tumblr.com</a>
+			</div></a>
+
+			<a href="http://stumbleupon.com/stumbler/brianyee322">
+			<div class="row">
+			<img src="img/icons/stumble.png" align="middle" height="34" style="margin-bottom: 10px;"> stumbleupon.com/brianyee322</a>
+			</div></a>
+
+
+		</div><!--/ column-->
+
+	</div><!--/ container-->
+	
+</div><!--/ main-->
+
+<!-- footer -->
+
+<footer class="band main">
+	
+	<hr>
+	
+	<div class="container">
+
+		<div class="columns eight">			
+
+				<img src="img/icons/circlelogo.png" height=100></img>
+			
+		</div><!--/ column-->
+		
+		<div class="columns eight last">
+
+			<h2>Created in 2013</h2>
+			
+		</div><!--/ column-->
+
+	</div><!--/ container-->
+	
+</footer><!--/ main-->		
+
+<!--js stuff down here after the rest of the page has loaded-->
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/skrollr.js"></script>	
+<script type="text/javascript">
+skrollr.init({
+	forceHeight: false
+});
+</script>
+</body>
+
+</html>

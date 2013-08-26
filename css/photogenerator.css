@@ -1,0 +1,28 @@
+.am-wrapper{
+	float:left;
+	position:relative;
+	overflow:hidden;
+}
+.am-wrapper img{
+	position:absolute;
+	outline:none;
+}
+a.am-wrapper{
+	cursor:default;
+}
+
+.tumblr-photos{
+	position: relative;
+	margin-top: 11.8em;
+}
+
+.fam{
+	margin-right: 1px;
+	margin-top: -1em;
+	margin-bottom: 2px;
+	height: 16em;
+	background-image: url(../img/tumblr-imgs/fam.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 99.9%;
+}
