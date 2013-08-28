@@ -111,7 +111,7 @@ footer {
 }
 
 /*as we don't haver many media queries, we'll stick them all here*/
-@media only screen and (min-width: 767px) { 
+@media only screen and (min-width: 690px) { 
 	
 	body {
 		font-size: 1.125em; /* 18px / 16px */
@@ -128,7 +128,7 @@ footer {
 		width: 100%;
 		background-repeat: no-repeat;
 		background-image:url(../img/backgrounds/background1.jpg);
-		background-size: 100%;
+		background-size: 150%;
 	}
 
 	header.band h1 {
@@ -145,7 +145,7 @@ footer {
 		color: white;
 		width: 100%;
 		margin: 0 auto;
-		position: absolute;
+		position: relative;
 	}
 
 	.top-moon{
@@ -159,12 +159,11 @@ footer {
 	}
 
 	section {
-		margin-top: 2em;
-		height: 53em;
 		width: 100%;
-		background-repeat: no-repeat;
+/*		background-repeat: no-repeat;
 		background-image: url(../img/backgrounds/bridge.jpg);
 		background-size: 120%;
+		height: 38em;*/
 	}
 
 	.row{
@@ -185,142 +184,6 @@ footer {
 		color: black;
 		text-decoration: none;
 	}
-
-	.circle-container{
-		z-index: 10000;
-		position: fixed;
-		right: 1%;
-	}
-	.circle{
-			opacity: 0.3; 
-			margin-top: 1em;
-			background: #FFFFFF;
-	    -webkit-border-radius:50%;
-	    -moz-border-radius:50%;
-	    border-radius:50%;
-	    width:20px;
-	    height:20px;
-	}
-	.circle:hover{
-		-webkit-transition: 0.2s;
-		opacity: 1;
-	}
-	.logo{
-		top: 15px;
-		left: 15px;
-		z-index: 100;
-		position: fixed;
-		height: 10em;
-	}
-
-	.projects{
-		width: 40%;
-		margin: 0 auto;
-	}
-
-	#preview:hover{
-		-webkit-box-shadow: 0px 0px 24px 0px rgba(255,255,255,1);
-		-moz-box-shadow: 0px 0px 24px 0px rgba(255,255,255,1);
-		box-shadow: 0px 0px 24px 0px rgba(255,255,255,1);
-		-webkit-transition-duration: 1s;
-	}
-
-	.coffee{
-		position: absolute;
-		right: 0;
-	}
-
-	#progress {
-	height: 2%;
-	background: #444;
-	bottom: 0;
-	z-index: 200;
-	position: fixed;
-	}
-
-
-	/*
-	==============================================
-	floating
-	==============================================
-	*/
-
-	.floating{
-		animation-name: floating;
-		-webkit-animation-name: floating;
-
-		animation-duration: 1.5s;	
-		-webkit-animation-duration: 1.5s;
-
-		animation-iteration-count: infinite;
-		-webkit-animation-iteration-count: infinite;
-	}
-
-	/*@keyframes floating {
-		0% {
-			transform: translateY(0%);	
-		}
-		50% {
-			transform: translateY(20%);	
-		}	
-		100% {
-			transform: translateY(0%);
-		}			
-	}
-	*/
-	@-webkit-keyframes floating {
-		0% {
-			-webkit-transform: translateY(0%);	
-		}
-		50% {
-			-webkit-transform: translateY(30%);	
-		}	
-		100% {
-			-webkit-transform: translateY(0%);
-		}			
-	}
-
-	.pulse{
-		animation-name: pulse;
-		-webkit-animation-name: pulse;	
-
-		animation-duration: 1.5s;	
-		-webkit-animation-duration: 1.5s;
-
-		animation-iteration-count: infinite;
-		-webkit-animation-iteration-count: infinite;
-	}
-
-	@keyframes pulse {
-		0% {
-			transform: scale(0.9);
-			opacity: 0.7;		
-		}
-		50% {
-			ransform: scale(1);
-			opacity: 1;	
-		}	
-		100% {
-			transform: scale(0.9);
-			opacity: 0.7;	
-		}			
-	}
-
-	@-webkit-keyframes pulse {
-		0% {
-			-webkit-transform: scale(0.95);
-			opacity: 0.7;		
-		}
-		50% {
-			-webkit-transform: scale(1);
-			opacity: 1;	
-		}	
-		100% {
-			-webkit-transform: scale(0.95);
-			opacity: 0.7;	
-		}			
-	}
-
 
 	a.button {
 		padding: .75em 1.5em;

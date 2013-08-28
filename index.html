@@ -12,7 +12,7 @@
 <!-- 	<link href="img/favicon.ico" rel="shortcut icon"  type="image/icon">
  -->		<!-- 	<link rel="stylesheet" href="css/animations.css">	
  -->	
- <!-- <link rel="stylesheet" href="css/custom.css"> -->
+ <link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/fluid_skeleton.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -85,7 +85,7 @@
 		</div>
 
 		<!-- SKY background -->
-		<header class="band" data-0="background-position:0px 0px;" data-2000="background-position:0px 1200px;" style="height: 55em;">
+		<header class="band" data-0="background-position:0px 0px;" data-2000="background-position:0px 1200px;">
 
 			<div class="container">
 
@@ -108,33 +108,25 @@
 </div>
 
 <!-- BRIDGE background image -->
-<section class="band" data-330="background-position: -100px 90px;" data-3000="background-position: -300px 90px;">
-	
-	<div class="container">
-
-		<div class="columns twelve offset-by-two" data-0="opacity: 1" data-180="opacity: 0">
-
-		</div><!--/ columns-->	
-		
-	</div><!--/ container-->		
-	
+<section class="band" style="height: 700px;">
+	<img src="img/backgrounds/bridge.jpg" style="height: 45em; position: absolute;" data-903="left:0%" data-2083="left:-25%;"/>
 </section><!--/ section-->
 
 <div class="banner" id="three">
 		<h1>I love making wicked awesome web applications!</h1>
 		<div class="headliner">I'm technically proficient, have real working experience, am easy to pair-program with, and won't stop until it's perfect!</div>
+		<!-- coffee and mouse -->
+
+		<div class="coffee" data-1782="right: 0%;" data-2782="right: -25%;">
+			<img src="img/backgrounds/coffee-mouse-right.png" style="float: right;"/>
+		</div>
+		
 </div>
 
 
-<div class="band main" style="background-image: url(img/backgrounds/desk2.jpg); background-size: 157%; background-position: center;">
+<div class="band main" style="background-image: url(img/backgrounds/wood.jpg); background-size: 100%; background-position: center;">
 
-	<!-- coffee and mouse -->
-
-	<div class="coffee" data-2166="right: 0%;" data-2666="right: -25%;">
-		<img src="img/backgrounds/coffee-mouse-right.png" style="float: right;"/>
-	</div>
-	
-	<div class="container" style="margin-top: 8em; padding: 4em 0em;">
+	<div class="container" style="padding: 4em 0em;">
 				<!-- projects -->
 
 					<div class="projects">
@@ -173,10 +165,11 @@
 
 			<!-- Put your other parallax photo here -->
 
-			<div class="tumblr-photos">  
+	<div class="tumblr-photos">  
 				<!-- photo strip -->
-				<div class="am-container" id="am-container" style="width:100%;margin:0 auto;">
-					<a href="javascript:;"><img id="computer" src="img/tumblr-imgs/2.jpg"></img></a>
+		<div class="am-container" id="am-container" style="width:100%;margin:0 auto;">
+
+					<a href="javascript:;"><img src="img/tumblr-imgs/2.jpg"></img></a>
 					<a href="javascript:;"><img src="img/tumblr-imgs/64.png"></img></a>
 					<a href="javascript:;"><img src="img/tumblr-imgs/6.gif"></img></a>
 					<a href="javascript:;"><img src="img/tumblr-imgs/8.jpg"></img></a>
@@ -234,10 +227,7 @@
 					<a href="javascript:;"><img src="img/tumblr-imgs/1.gif"></img></a>
 
 					<a href="javascript:;"><img src="img/tumblr-imgs/42.jpg"></img></a>
-		
-
-<!-- 					<a href="javascript:;"><img src="img/tumblr-imgs/77.gif"></img></a>
- -->					<a href="javascript:;"><img src="img/tumblr-imgs/92.gif"></img></a>
+					<a href="javascript:;"><img src="img/tumblr-imgs/92.gif"></img></a>
 					<a href="javascript:;"><img src="img/tumblr-imgs/47.jpg"></img></a>
 					<a href="javascript:;"><img src="img/tumblr-imgs/48.jpg"></img></a>
 					<a href="javascript:;"><img src="img/tumblr-imgs/92.jpg"></img></a>
@@ -258,12 +248,10 @@
 					<a href="javascript:;"><img src="img/tumblr-imgs/46.jpg"></img></a>	
 					<a href="javascript:;"><img src="img/tumblr-imgs/65.gif"></img></a>
 					<a href="javascript:;"><img src="img/tumblr-imgs/21.gif"></img></a>
-				</div>
-			</div>
-			<hr>
-<div class="fam"></div>
+	</div>
+</div>
 
-<div class="banner" id="five">
+<div class="bottom-holder" id="five" style="position: relative;">
 
 	<div class="container">
 
@@ -280,10 +268,9 @@
 	</div><!--/ column2-->
 
 	</div>
-
 </div>
 
-<div class="band main" style="margin-top: 8em;">
+<div class="band main" style="margin-top: 1em;">
 	
 	<div class="container">
 
@@ -336,10 +323,10 @@
 
 <!-- footer -->
 
+<hr>
+
 <footer class="band main">
-	
-	<hr>
-	
+		
 	<div class="container">
 
 		<div class="columns eight">			
@@ -357,6 +344,8 @@
 	</div><!--/ container-->
 	
 </footer><!--/ main-->		
+
+</div>
 
 <!--js stuff down here after the rest of the page has loaded-->
 <script type="text/javascript" src="js/smoothscroll.js"></script>
