@@ -1,5 +1,4 @@
 /*imports*/ 
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 
 html {
@@ -185,6 +184,141 @@ footer {
 	#contact a:visited{
 		color: black;
 		text-decoration: none;
+	}
+
+	.circle-container{
+		z-index: 10000;
+		position: fixed;
+		right: 1%;
+	}
+	.circle{
+			opacity: 0.3; 
+			margin-top: 1em;
+			background: #FFFFFF;
+	    -webkit-border-radius:50%;
+	    -moz-border-radius:50%;
+	    border-radius:50%;
+	    width:20px;
+	    height:20px;
+	}
+	.circle:hover{
+		-webkit-transition: 0.2s;
+		opacity: 1;
+	}
+	.logo{
+		top: 15px;
+		left: 15px;
+		z-index: 100;
+		position: fixed;
+		height: 10em;
+	}
+
+	.projects{
+		width: 40%;
+		margin: 0 auto;
+	}
+
+	#preview:hover{
+		-webkit-box-shadow: 0px 0px 24px 0px rgba(255,255,255,1);
+		-moz-box-shadow: 0px 0px 24px 0px rgba(255,255,255,1);
+		box-shadow: 0px 0px 24px 0px rgba(255,255,255,1);
+		-webkit-transition-duration: 1s;
+	}
+
+	.coffee{
+		position: absolute;
+		right: 0;
+	}
+
+	#progress {
+	height: 2%;
+	background: #444;
+	bottom: 0;
+	z-index: 200;
+	position: fixed;
+	}
+
+
+	/*
+	==============================================
+	floating
+	==============================================
+	*/
+
+	.floating{
+		animation-name: floating;
+		-webkit-animation-name: floating;
+
+		animation-duration: 1.5s;	
+		-webkit-animation-duration: 1.5s;
+
+		animation-iteration-count: infinite;
+		-webkit-animation-iteration-count: infinite;
+	}
+
+	/*@keyframes floating {
+		0% {
+			transform: translateY(0%);	
+		}
+		50% {
+			transform: translateY(20%);	
+		}	
+		100% {
+			transform: translateY(0%);
+		}			
+	}
+	*/
+	@-webkit-keyframes floating {
+		0% {
+			-webkit-transform: translateY(0%);	
+		}
+		50% {
+			-webkit-transform: translateY(30%);	
+		}	
+		100% {
+			-webkit-transform: translateY(0%);
+		}			
+	}
+
+	.pulse{
+		animation-name: pulse;
+		-webkit-animation-name: pulse;	
+
+		animation-duration: 1.5s;	
+		-webkit-animation-duration: 1.5s;
+
+		animation-iteration-count: infinite;
+		-webkit-animation-iteration-count: infinite;
+	}
+
+	@keyframes pulse {
+		0% {
+			transform: scale(0.9);
+			opacity: 0.7;		
+		}
+		50% {
+			ransform: scale(1);
+			opacity: 1;	
+		}	
+		100% {
+			transform: scale(0.9);
+			opacity: 0.7;	
+		}			
+	}
+
+	@-webkit-keyframes pulse {
+		0% {
+			-webkit-transform: scale(0.95);
+			opacity: 0.7;		
+		}
+		50% {
+			-webkit-transform: scale(1);
+			opacity: 1;	
+		}	
+		100% {
+			-webkit-transform: scale(0.95);
+			opacity: 0.7;	
+		}			
 	}
 
 

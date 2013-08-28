@@ -14,7 +14,7 @@
 
     	.container                                  { position: relative; width: 100%; max-width: 100%; margin: 0 auto; padding: 0; }
         .container .columns,
-        .container .column 							{ float: left; display: inline; padding-left: 1em; padding-right: 1em; }
+        .container .column 							{ float: left; display: inline; padding-left: 0em; padding-right: 0em; }
 
         .container .one.column,
         .container .one.columns,
