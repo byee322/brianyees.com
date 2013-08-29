@@ -13,10 +13,13 @@
     width:20px;
     height:20px;
 }
+
 .circle:hover{
 	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
 	opacity: 1;
 }
+
 .logo{
 	top: 15px;
 	left: 15px;
@@ -39,7 +42,7 @@
 
 .coffee{
 	position: absolute;
-	margin-top: 1em;
+	margin-top: -s4em;
 }
 
 #progress {
@@ -68,18 +71,18 @@ floating
 	-webkit-animation-iteration-count: infinite;
 }
 
-/*@keyframes floating {
+@keyframes floating {
 	0% {
 		transform: translateY(0%);	
 	}
 	50% {
-		transform: translateY(20%);	
+		transform: translateY(30%);	
 	}	
 	100% {
 		transform: translateY(0%);
 	}			
 }
-*/
+
 @-webkit-keyframes floating {
 	0% {
 		-webkit-transform: translateY(0%);	
