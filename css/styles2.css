@@ -8,6 +8,7 @@ html {
 body {
 	font-size: 1em; /* 16px / 16px */
 	color: #353738;
+	overflow-y: hidden;
 }
 
 hr {
