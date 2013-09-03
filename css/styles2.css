@@ -133,6 +133,17 @@ footer {
 		background-size: 150%;
 	}
 
+	.logo{
+		left: 15px;
+		z-index: 100;
+		position: fixed;
+		height: 10em;
+	}
+
+	#logo{
+		width: 10em;
+	}
+
 	header.band h1 {
 		font-size: 3.25em; /*52 / 16*/
 	}
@@ -274,15 +285,15 @@ footer {
 	}
 
 	.logo{
-		top: 15px;
-		left: 15px;
+		top: 8px;
+		left: 8px;
 		z-index: 100;
 		position: fixed;
-		height: 10em;
+		height: 8.3em;
 	}
 
 	#logo{
-		width: 100px;
+		width: 80px;
 	}
 
 	#bridge{

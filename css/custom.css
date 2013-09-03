@@ -20,14 +20,6 @@
 	opacity: 1;
 }
 
-.logo{
-	top: 15px;
-	left: 15px;
-	z-index: 100;
-	position: fixed;
-	height: 10em;
-}
-
 .projects{
 	position: relative;
 	width: 40%;
