@@ -34,7 +34,7 @@ div.band .columns {
 }
 
 header.band {
-	background: white;
+	background: black;
 	color: white;
 	text-align: center;
 	padding: 10% 0 15% 0;
@@ -78,7 +78,7 @@ a.button {
 	box-shadow: 0 0.2em 0 #ab3009;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-		
+
 	/*transition cross-browser stuff*/
 	-webkit-transition: background 0.2s ease-out;  /* Safari 3.2+, Chrome */
 	-moz-transition: background 0.2s ease-out;  /* Firefox 4-15 */
@@ -140,6 +140,10 @@ footer {
 		text-align: center;
 	}
 
+	#three{
+		margin-top: 10em;
+	}
+
 	.banner {
 		background-color: black;
 		padding: .9em 1em;
@@ -169,6 +173,128 @@ footer {
 
 	.bottom-holder a{
 		
+	}
+
+	#bridge{
+		width: 125%; 
+		height: 125%; 
+		position: absolute;
+	}
+
+	.row{
+		margin-left: 2em;
+		padding: 2px;
+	}
+
+	#contact a{
+		text-decoration: none;
+		color: black;
+	}
+
+	#contact a:hover{
+		text-decoration: underline;
+	}
+
+	#contact a:visited{
+		color: black;
+		text-decoration: none;
+	}
+
+	a.button {
+		padding: .75em 1.5em;
+	}
+	
+	footer {
+		text-align: left;
+	}
+
+	.last {
+		text-align: right;
+	}
+
+}
+
+@media only screen and (max-width: 400px) { 
+	
+	body {
+		width: 500px;
+		font-size: .6em; /* 18px / 16px */
+		line-height: 1em;
+	}
+	
+	div.band .columns {
+		padding-top: 0em;
+		padding-bottom: 0em;
+	}
+
+	header.band {
+		margin: 0 auto;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-image:url(../img/backgrounds/background1.jpg);
+		background-size: 150%;
+	}
+
+	header.band h1 {
+		font-size: 3.25em; /*52 / 16*/
+	}
+
+	.headliner {
+		text-align: center;
+	}
+
+	.banner {
+		background-color: black;
+		padding: .9em 1em;
+		color: white;
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.top-moon{
+		background-image: url(../img/icons/moon2.png);
+		top: 20%;
+		z-index: 0;
+		background-repeat: no-repeat;
+		background-size: 48%;
+		height: 23em;
+		position: absolute;
+	}
+
+	.logo{
+		top: 15px;
+		left: 15px;
+		z-index: 100;
+		position: fixed;
+		height: 10em;
+	}
+
+	#logo{
+		width: 100px;
+	}
+
+	#bridge{
+		width: 145%;
+		height: 60%;
+		position: absolute;
+		left: 0%;
+	}
+
+	#three{
+		margin-top: -25em;
+	}
+
+	section {
+		width: 100%;
+/*		background-repeat: no-repeat;
+		background-image: url(../img/backgrounds/bridge.jpg);
+		background-size: 120%;
+		height: 38em;*/
+	}
+
+	.bottom-holder{
+		font-size: 1em;
 	}
 
 	.row{
