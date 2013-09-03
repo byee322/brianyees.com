@@ -141,7 +141,7 @@ footer {
 	}
 
 	#three{
-		margin-top: 10em;
+		margin-top: -1em;
 	}
 
 	.banner {
@@ -165,6 +165,7 @@ footer {
 
 	section {
 		width: 100%;
+		overflow: hidden;
 /*		background-repeat: no-repeat;
 		background-image: url(../img/backgrounds/bridge.jpg);
 		background-size: 120%;
@@ -177,8 +178,7 @@ footer {
 
 	#bridge{
 		width: 125%; 
-		height: 125%; 
-		position: absolute;
+		position: relative;
 	}
 
 	.row{
@@ -214,12 +214,17 @@ footer {
 
 }
 
-@media only screen and (max-width: 400px) { 
+@media only screen and (max-width: 689px) { 
 	
 	body {
-		width: 500px;
+		width: 100%;
 		font-size: .6em; /* 18px / 16px */
 		line-height: 1em;
+	}
+
+	#about-me{
+		font-size: 2em; /* 18px / 16px */
+		line-height: 1.7em;
 	}
 	
 	div.band .columns {
@@ -277,16 +282,17 @@ footer {
 	#bridge{
 		width: 145%;
 		height: 60%;
-		position: absolute;
+		position: relative;
 		left: 0%;
 	}
 
 	#three{
-		margin-top: -25em;
+		margin-top: -1em;
 	}
 
 	section {
 		width: 100%;
+		overflow: hidden;
 /*		background-repeat: no-repeat;
 		background-image: url(../img/backgrounds/bridge.jpg);
 		background-size: 120%;

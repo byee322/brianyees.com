@@ -29,8 +29,10 @@
 }
 
 .projects{
+	position: relative;
 	width: 40%;
 	margin: 0 auto;
+	z-index: 100;
 }
 
 #preview:hover{
@@ -43,6 +45,7 @@
 .coffee{
 	position: absolute;
 	margin-top: -3.94em;
+	z-index: 2;
 }
 
 #progress {
