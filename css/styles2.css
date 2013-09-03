@@ -42,6 +42,7 @@ header.band {
 
 
 h1, h2, h3 {
+	line-height: 1em;
 	font-family: 'Roboto', serif;
 	font-weight: 700;
 	text-align: center;
@@ -181,6 +182,11 @@ footer {
 		position: relative;
 	}
 
+	#portrait{
+		float: right;
+		margin: 2em;
+	}
+
 	.row{
 		margin-left: 2em;
 		padding: 2px;
@@ -281,7 +287,6 @@ footer {
 
 	#bridge{
 		width: 145%;
-		height: 60%;
 		position: relative;
 		left: 0%;
 	}
@@ -304,8 +309,14 @@ footer {
 	}
 
 	.row{
+		font-size: .7em;
 		margin-left: 2em;
 		padding: 2px;
+	}
+
+	#portrait{
+		float: right;
+		margin: 3em;
 	}
 
 	#contact a{
