@@ -40,6 +40,10 @@ header.band {
 	padding: 10% 0 15% 0;
 }
 
+#about-me{
+	z-index: 999;
+}
+
 
 h1, h2, h3 {
 	line-height: 1em;
@@ -163,6 +167,7 @@ footer {
 		width: 100%;
 		margin: 0 auto;
 		position: relative;
+		z-index: 998;
 	}
 
 	.top-moon{
