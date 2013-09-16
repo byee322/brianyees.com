@@ -1,5 +1,11 @@
+.am-container{
+	width:100%;
+	margin:0 auto;
+/*	visibility: hidden;
+*/}
 .am-wrapper{
-	float:left;
+/*	visibility: hidden;
+*/	float:left;
 	position:relative;
 	overflow:hidden;
 }
@@ -9,7 +15,8 @@
 }
 a.am-wrapper{
 	cursor:default;
-}
+/*	visibility: hidden;
+*/}
 
 .tumblr-photos{
 }
