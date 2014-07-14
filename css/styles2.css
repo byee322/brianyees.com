@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 
 html {
-	font: 100%/1.5em 'Roboto', sans-serif;
+	font: 100%/1em 'Roboto', sans-serif;
 }
 
 body {
@@ -43,7 +43,6 @@ header.band {
 #about-me{
 	z-index: 999;
 }
-
 
 h1, h2, h3 {
 	line-height: 1em;
@@ -116,6 +115,159 @@ footer {
 	color: #3B5998;
 }
 
+/*---------------*/
+/***** Marley *****/
+/*---------------*/
+
+/* Common style */
+figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	width: 100%;
+	height: 700px;
+	background: brown;
+	text-align: center;
+	cursor: pointer;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+}
+
+figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+}
+
+figure h2{
+	text-align: right;
+}
+
+figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure figcaption::before,
+figure figcaption::after {
+	pointer-events: none;
+}
+
+figure figcaption,
+figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+figure h2 span {
+	font-weight: 800;
+}
+
+figure h2,
+figure p {
+	margin: 0;
+}
+
+figure p {
+	letter-spacing: 3px;
+	font-size: 68.5%;
+}
+
+figure.effect-marley figcaption {
+	text-align: right;
+}
+
+figure.effect-marley h2,
+figure.effect-marley p {
+	position: absolute;
+	right: 30px;
+	left: 30px;
+	padding: 10px 0;
+}
+
+
+figure.effect-marley p {
+	bottom: 30px;
+	line-height: 1.5;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect-marley h2 {
+	top: 30px;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-marley:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-marley h2::after {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 70%;
+	height: 4px;
+	background: #fff;
+	content: '';
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-marley h2::after,
+figure.effect-marley p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-marley:hover h2::after,
+figure.effect-marley:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-marley img {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,10px,100px);
+	transform: translate3d(0,10px,100px);
+}
+
+figure.effect-marley:hover img {
+	opacity: 0.6;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
 /*as we don't haver many media queries, we'll stick them all here*/
 @media only screen and (min-width: 690px) { 
 	
@@ -135,6 +287,8 @@ footer {
 		background-repeat: no-repeat;
 		background-image:url(../img/backgrounds/background1.jpg);
 		background-size: 150%;
+		-webkit-perspective: 1000px;
+		perspective: 1000px;
 	}
 
 	.logo{
@@ -173,10 +327,10 @@ footer {
 	.top-moon{
 		background-image: url(../img/icons/moon2.png);
 		top: 20%;
-		z-index: 0;
+		z-index: 10;
 		background-repeat: no-repeat;
 		background-size: 48%;
-		height: 23em;
+		height: 61%;
 		position: absolute;
 	}
 
@@ -194,8 +348,9 @@ footer {
 	}
 
 	#bridge{
-		width: 125%; 
+		width: 100%; 
 		position: relative;
+		height: 300px;
 	}
 
 	#portrait{
@@ -222,7 +377,7 @@ footer {
 		text-decoration: none;
 	}
 
-	a.button {
+	a.button{
 		padding: .75em 1.5em;
 	}
 	
@@ -230,7 +385,7 @@ footer {
 		text-align: left;
 	}
 
-	.last {
+	.last{
 		text-align: right;
 	}
 
@@ -238,7 +393,7 @@ footer {
 
 @media only screen and (max-width: 689px) { 
 	
-	body {
+	body{
 		width: 100%;
 		font-size: .6em; /* 18px / 16px */
 		line-height: 1em;
@@ -269,7 +424,10 @@ footer {
 	.headliner {
 		text-align: center;
 	}
-
+	.coffee #coffee-name{
+		float: right;
+		width:50%;
+	}
 	.banner {
 		background-color: black;
 		padding: .9em 1em;
@@ -285,7 +443,7 @@ footer {
 		z-index: 0;
 		background-repeat: no-repeat;
 		background-size: 48%;
-		height: 23em;
+		height: 13em;
 		position: absolute;
 	}
 
@@ -302,9 +460,12 @@ footer {
 	}
 
 	#bridge{
-		width: 145%;
+		width: 100%;
 		position: relative;
 		left: 0%;
+	}
+	figure{
+		height: 300px;
 	}
 
 	#three{
