@@ -481,6 +481,11 @@ figure.effect-marley:hover img {
 		height: 38em;*/
 	}
 
+	.container.projects{
+		float: none !important;
+		margin: 0 auto;
+	}
+
 	.bottom-holder{
 		font-size: 1em;
 	}

@@ -1,7 +1,7 @@
 .circle-container{z-index:10000;position:fixed;right:1%}
 .circle{opacity:0.3;margin-top:1em;background:#FFF;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;width:20px;height:20px}
 .circle:hover{-webkit-transition:.2s;-moz-transition:.2s;opacity:1}
-.projects{position:relative;width:40%;z-index:100;margin:0 auto}
+.projects{position:relative;width:350px; display: inline;}
 #preview:hover{-webkit-box-shadow:0 0 24px 0 rgba(255,255,255,1);-moz-box-shadow:0 0 24px 0 rgba(255,255,255,1);box-shadow:0 0 24px 0 rgba(255,255,255,1);-webkit-transition-duration:1s}
 .coffee{position:absolute;margin-top:-3.94em;z-index:3;}
 #progress{height:2%;background:#444;bottom:0;z-index:200;position:fixed}

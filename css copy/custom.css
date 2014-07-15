@@ -1,11 +1,1 @@
-.circle-container{z-index:10000;position:fixed;right:1%}
-.circle{opacity:0.3;margin-top:1em;background:#FFF;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;width:20px;height:20px}
-.circle:hover{-webkit-transition:.2s;-moz-transition:.2s;opacity:1}
-.projects{position:relative;width:40%;z-index:100;margin:0 auto}
-#preview:hover{-webkit-box-shadow:0 0 24px 0 rgba(255,255,255,1);-moz-box-shadow:0 0 24px 0 rgba(255,255,255,1);box-shadow:0 0 24px 0 rgba(255,255,255,1);-webkit-transition-duration:1s}
-.coffee{position:absolute;margin-top:-3.94em;z-index:3;}
-#progress{height:2%;background:#444;bottom:0;z-index:200;position:fixed}
-.floating{animation-name:floating;-webkit-animation-name:floating;animation-duration:1.5s;-webkit-animation-duration:1.5s;animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite}
-50%{transform:translateY(30%);ransform:scale(1);-webkit-transform:scale(1);opacity:1}
-100%{transform:scale(0.9);-webkit-transform:scale(0.95);opacity:0.7}
-.pulse{animation-name:pulse;-webkit-animation-name:pulse;animation-duration:1.5s;-webkit-animation-duration:1.5s;animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite}
+.circle-container{z-index:10000;position:fixed;right:1%}.circle{opacity:.3;margin-top:1em;background:#FFF;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;width:20px;height:20px}.circle:hover{-webkit-transition:.2s;-moz-transition:.2s;opacity:1}.projects{position:relative;width:350px;display:inline}#preview:hover{-webkit-box-shadow:0 0 24px 0 rgba(255,255,255,1);-moz-box-shadow:0 0 24px 0 rgba(255,255,255,1);box-shadow:0 0 24px 0 rgba(255,255,255,1);-webkit-transition-duration:1s}.coffee{position:absolute;margin-top:-3.94em;z-index:3}#progress{height:2%;background:#444;bottom:0;z-index:200;position:fixed}.floating{animation-name:floating;-webkit-animation-name:floating;animation-duration:1.5s;-webkit-animation-duration:1.5s;animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite}50%{transform:translateY(30%);ransform:scale(1);-webkit-transform:scale(1);opacity:1}100%{transform:scale(0.9);-webkit-transform:scale(0.95);opacity:.7}.pulse{animation-name:pulse;-webkit-animation-name:pulse;animation-duration:1.5s;-webkit-animation-duration:1.5s;animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite}
